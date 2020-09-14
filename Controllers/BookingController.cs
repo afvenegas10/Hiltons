@@ -19,20 +19,28 @@ namespace Hilton.Controllers
         [HttpGet]
         public async Task<Booking> GetAsync(int? limit)
         {
-            log.Info("Hello logging world!");
+
+            if (limit != null)
+            {
+                log.Info("limit:" + limit.ToString());
+            }
+            else
+            {
+                log.Info("");
+            }
 
             var response = new Booking
             {
                 Date = DateTime.Now,
             };
 
-            if(Request!=null && Request.Body != null)
+            if (Request != null && Request.Body != null)
             {
                 using (var reader = new StreamReader(Request.Body))
                 {
                     response.Request = await reader.ReadToEndAsync();
                 }
-            }           
+            }
 
             if (limit != null && limit > 0)
             {

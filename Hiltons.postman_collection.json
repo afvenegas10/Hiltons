@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "042805ce-2692-45d1-8d54-4f271640cd73",
+		"name": "Hiltons",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "hilton",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"a\": \"b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:32772/api/Booking?limit=10",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "32772",
+					"path": [
+						"api",
+						"Booking"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hiltonBool",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:32772/api/Booking",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "32772",
+					"path": [
+						"api",
+						"Booking"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
