@@ -6,6 +6,31 @@
 	},
 	"item": [
 		{
+			"name": "docker local",
+			"item": [
+				{
+					"name": "local",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:80/api/Booking",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"api",
+								"Booking"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
 			"name": "hilton",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
