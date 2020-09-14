@@ -1,0 +1,8 @@
+version: "3"
+services:
+    Hiltons:
+      image: "afvenegas10/hiltons"
+      ports:
+       - "80:80"
+      volumes:
+       - /app/log:/app/log
